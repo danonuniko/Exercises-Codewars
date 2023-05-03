@@ -11,20 +11,20 @@
 
  using System;
 
-	public class Kata
+public class Kata
+{
+	public static string ToCamelCase(string str)
 	{
-		public static string ToCamelCase(string str)
-		{
-			string[] words = str.Replace("-", " ").Replace("_", " ").Split();
-			for(int i = 1 ; i < words.Length ; i++) {
-				words[i] = words[i].Substring(0,1).ToUpper() + words[i].Substring(1).ToLower();
-			}
-			return string.Join("", words);
+		string[] words = str.Replace("-", " ").Replace("_", " ").Split();
+		for(int i = 1 ; i < words.Length ; i++) {
+			words[i] = words[i].Substring(0,1).ToUpper() + words[i].Substring(1).ToLower();
 		}
-		public static void Main(String[] args)
-		{
-			Console.WriteLine(ToCamelCase("hola-que-tal-estas"));
-            Console.WriteLine(ToCamelCase("the-stealth-warrior"));
-            Console.WriteLine(ToCamelCase("The_Stealth_Warrior"));
-		}
+		return string.Join("", words);
 	}
+	public static void Main(String[] args)
+	{
+		Console.WriteLine(ToCamelCase("hola-que-tal-estas"));
+		Console.WriteLine(ToCamelCase("the-stealth-warrior"));
+		Console.WriteLine(ToCamelCase("The_Stealth_Warrior"));
+	}
+}
