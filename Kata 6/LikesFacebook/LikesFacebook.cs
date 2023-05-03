@@ -37,12 +37,12 @@ public static class Kata
     }
 
     public static void Main(String[] args)
-	{
-		Console.WriteLine(Likes(new string[0]));
+    {
+	Console.WriteLine(Likes(new string[0]));
         Console.WriteLine(Likes(new string[1]{"Daniel"}));
         Console.WriteLine(Likes(new string[2]{"Daniel", "Marco"}));
         Console.WriteLine(Likes(new string[3]{"Daniel", "Marco", "Juan"}));
         Console.WriteLine(Likes(new string[4]{"Daniel", "Perico", "Manolo", "Pedro"}));
         Console.WriteLine(Likes(new string[6]{"Daniel", "Juan", "Julián", "David", "Jose Miguel", "Sandra"}));
-	}
+    }
 }
