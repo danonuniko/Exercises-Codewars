@@ -9,7 +9,7 @@
  * "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
  */
 
- public class Start {
+ public class StringToCamelCase {
 
 	public static String toCamelCase(String s) {
 		String[] palabras = s.replace("-", " ").replace("_", " ").split(" ");
@@ -17,7 +17,7 @@
 		for (int i = 1; i < palabras.length; i++) {
 			String palabra = "";
 			char inicial = Character.toUpperCase(palabras[i].charAt(0));
-			palabra = inicial + palabras[i].substring(1);
+			palabra = inicial + palabras[i].substring(1).toLowerCase();
 			texto += palabra;
 		}
 		return texto;
@@ -25,6 +25,7 @@
 
 	public static void main(String[] args) {
 
+		System.out.println(toCamelCase("Hola-Que-tal_ESTAS"));
 		System.out.println(toCamelCase("the-stealth-warrior"));
 		System.out.println(toCamelCase("The_Stealth_Warrior"));
 	}

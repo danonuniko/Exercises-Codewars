@@ -14,8 +14,9 @@ def to_camel_case(text):
     lista = text.replace("-", " ").replace("_", " ").split(" ")
     result = lista[0]
     for word in lista[1:]:
-        result += word[0].upper() + word[1:]
+        result += word[0].upper() + word[1:].lower()
     return result
 
+print(to_camel_case("hola_que-TAL-Estas"))
 print(to_camel_case("the-stealth-warrior"))
 print(to_camel_case("The_Stealth_Warrior"))
