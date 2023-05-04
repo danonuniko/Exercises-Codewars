@@ -83,6 +83,7 @@ public class Isogramas {
 		System.out.println(isIsogram("Dermatoglyphics"));
 		System.out.println(isIsogram("moOse"));
 		System.out.println(isIsogram("abA"));
+		
 	}
 
 }
