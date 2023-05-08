@@ -23,4 +23,10 @@ public static class Kata
     }
     return z;
   }
+
+  public static void Main(string[] args)
+  {
+    int[] z = CountBy(2, 5);
+    foreach(int number in z)  Console.Write(number + " ");
+  }
 }
