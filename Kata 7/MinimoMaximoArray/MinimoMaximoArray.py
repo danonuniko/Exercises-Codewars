@@ -41,3 +41,7 @@ def min_max(lst):
     lst.sort()
     tempor = [lst[0],lst[-1]]
     return tempor
+
+print(min_max([1, 2, 3, 4, 5]))
+print(min_max([23456, 5]))
+print(min_max([1, 1]))
