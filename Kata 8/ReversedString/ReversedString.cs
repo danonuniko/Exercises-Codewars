@@ -14,6 +14,15 @@ public class Kata
         foreach(char letter in s)   result = letter + result;
         return result;
     }
+
+    /* Solución de la comunidad.
+
+    public static string Solution(string str) 
+    {
+        return new string(str.ToArray().Reverse().ToArray());
+    }
+    */
+
     public static void Main(string[] args)
     {
         System.Console.WriteLine(ReversedString("world"));
