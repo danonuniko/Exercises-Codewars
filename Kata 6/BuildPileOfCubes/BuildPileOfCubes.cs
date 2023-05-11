@@ -21,7 +21,7 @@ public class Kata {
 	public static long findNb(long m) {
 		long resultado = 0;
 		for (int i = 0; i < m; i++) {
-			resultado += (long) Math.pow((i + 1), 3);
+			resultado += (long) Math.Pow((i + 1), 3);
 			if (resultado == m)
 				return i + 1;
 			else if (resultado > m)
