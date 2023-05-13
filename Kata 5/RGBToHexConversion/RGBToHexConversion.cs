@@ -69,9 +69,9 @@ public class Kata
 
     public static void Main(string[] args)
     {
-        Console.WriteLine(Rgb(255, 255, 255));
-		Console.WriteLine(Rgb(255, 255, 300));
-		Console.WriteLine(Rgb(0, 0, 0));
-		Console.WriteLine(Rgb(148, 0, 211));
+      Console.WriteLine(Rgb(255, 255, 255));
+      Console.WriteLine(Rgb(255, 255, 300));
+      Console.WriteLine(Rgb(0, 0, 0));
+      Console.WriteLine(Rgb(148, 0, 211));
     }
 }
