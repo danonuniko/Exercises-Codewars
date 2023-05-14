@@ -41,9 +41,8 @@ public class Kata
 		return solution ? "Special!!" : "NOT!!";
 
         /*  
-        Otra opción simplificada de Regex pero que me daba error (Creo que por no utilizar el método ToString()): 
-            return Regex.IsMatch(number.ToString(), "[^0-5]") ? "NOT!!" : "Special!!";
-        Lo que no entiendo es porque en este caso el orden de true y false del operador ternario parece funcionar al revés.
+        Otra opción simplificada de Regex pero que me daba error:
+            return new Regex(@"^[012345]+$").IsMatch(number.ToString()) ? "Special!!" : "NOT!!";
         */
     }
 }
