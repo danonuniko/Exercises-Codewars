@@ -27,6 +27,7 @@
 	public static void main(String[] args) {
 		System.out.println(dontGiveMeFive(1, 9));
 		System.out.println(dontGiveMeFive(4, 17));
+		System.out.println(dontGiveMeFive(50, 60));
 	}
  
 }
