@@ -23,7 +23,9 @@
 import java.util.*;
 
 public class ArrayOneInsideArrayTwo {
- 
+
+    // Solución propia.
+    
     public static String[] inArray(String[] array1, String[] array2) {
 
         ArrayList<String> result = new ArrayList<>();
