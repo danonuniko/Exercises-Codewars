@@ -19,7 +19,8 @@
 
 using System.Linq;
 
- public class EvenOrOddSumArray {
+public class EvenOrOddSumArray 
+{
 
     // Mi solución utilizando Linq.
     public static string OddOrEven(int[] array)
