@@ -27,12 +27,13 @@ import java.util.*;
 
     }
 
-    public static void Main(string[] args) {
+    public static void main(String[] args) {
 
         ArrayList<int[]> stops = new ArrayList<>();
         stops.add(new int[] {10, 0});
         stops.add(new int[] {3, 5});
         stops.add(new int[] {5, 8});
         System.out.println(countPassengers(stops));
+
     }
 }
