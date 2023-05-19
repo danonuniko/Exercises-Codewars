@@ -19,7 +19,7 @@
 
 import java.util.*;
 
- public class EvenOrOddSumArray {
+public class EvenOrOddSumArray {
 
     // Solución utilizando lógica básica.
     public static String OddOrEven(int[] array) {
