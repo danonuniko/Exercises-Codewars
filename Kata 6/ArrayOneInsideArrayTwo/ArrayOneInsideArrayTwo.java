@@ -37,6 +37,30 @@ public class ArrayOneInsideArrayTwo {
         for(int i = 0 ; i < result.size() ; i++)	solution[i] = result.get(i);
         return solution;
     }
+
+    // Solución comunidad. A destacar el uso del Set (evitamos repeticiones), el uso del break cada vez que hay una coincidencia y la conversion de ArrayList a Array (aprender).
+
+    /*
+    import java.util.Set;
+    import java.util.HashSet;
+    import java.util.Arrays;
+    */    
+    public static String[] inArray_community(String[] array1, String[] array2) {
+        Set<String> result = new HashSet<>();
+    
+        for(String a1 : array1) {
+            for(String a2 : array2) {
+                if(a2.contains(a1)) {
+                result.add(a1);
+                break;
+                }
+            }
+        }
+        
+        String[] resultArray = result.toArray(new String[result.size()]);
+        Arrays.sort(resultArray);
+        return resultArray;
+    }
  
     public static void main(String[] args) {
 
