@@ -24,6 +24,15 @@ import java.util.*;
             people -= values[1];
         }
         return people;
-        
+
+    }
+
+    public static void Main(string[] args) {
+
+        ArrayList<int[]> stops = new ArrayList<>();
+        stops.add(new int[] {10, 0});
+        stops.add(new int[] {3, 5});
+        stops.add(new int[] {5, 8});
+        System.out.println(countPassengers(stops));
     }
 }
