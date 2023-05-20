@@ -31,7 +31,7 @@ public class Kata
     // Solución comunidad usando Linq.
     public static string SpinWords_community(string sentence)
     {
-        return String.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
+        return string.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
     }
 
     public static void Main(string[] args)
