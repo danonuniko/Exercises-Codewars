@@ -20,7 +20,7 @@ public class Kata
         {
             if(words[i].Length >= 5)
             {
-            String word = "";
+            string word = "";
             for(int j = 0 ; j < words[i].Length ; j++)    word = words[i][j] + word;
             words[i] = word;
             }
