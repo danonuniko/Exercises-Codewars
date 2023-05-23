@@ -21,3 +21,6 @@ def is_pangram_community(s):
         if char not in s:
             return False
     return True
+
+print(is_pangram("Hello"))
+print(is_pangram("The quick brown fox jumps over the lazy dog"))
