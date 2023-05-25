@@ -48,4 +48,5 @@ public class ProdFib
         return b * c == prod ? new ulong[] {b, c, 1} : new ulong[] {b, c, 0} ;
         // Alternativa:     return new ulong[] {b, c, b * c == prod ? 1UL : 0UL};
     }
+    
 }
