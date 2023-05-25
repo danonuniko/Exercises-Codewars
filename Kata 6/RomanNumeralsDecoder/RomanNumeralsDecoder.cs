@@ -50,15 +50,19 @@ public class RomanDecode
         numerosEspeciales.Add("CD", 400);
         numerosEspeciales.Add("CM",900);
 
-        foreach(string key in numerosEspeciales.Keys) {
-            while(str.Contains(key)) {
+        foreach(string key in numerosEspeciales.Keys) 
+        {
+            while(str.Contains(key)) 
+            {
                 result += numerosEspeciales[key];
                 int pos = str.IndexOf(key);
                 str = str.Substring(0,pos) + str.Substring(pos + key.Length);
             }   
         }
-        foreach(string key in numeros.Keys) {
-            while(str.Contains(key)) {
+        foreach(string key in numeros.Keys) 
+        {
+            while(str.Contains(key)) 
+            {
                 result += numeros[key];
                 int pos = str.IndexOf(key);
                 str = str.Substring(0,pos) + str.Substring(pos + key.Length);
@@ -66,7 +70,6 @@ public class RomanDecode
         }
 
         return result;
-
     }
 
     public static void main(String[] args) {
