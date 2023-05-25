@@ -42,8 +42,6 @@ record Shoe(Foot foot, int size) { }
 
 public class PairOfShoes {
 
-    // Solución propia que funciona en Codewars pero me da error al utilizar Collections. 
-    // Posiblemente sea por la versión de Java utilizada, utilizando diferentes y con modificaciones de sintaxis entre ellas.
     public static boolean pairOfShoes(Shoe[] shoes) {
         
         List<Integer> derechos = new ArrayList<>();
@@ -56,12 +54,8 @@ public class PairOfShoes {
 
         if(derechos.size() != izquierdos.size())    return false;
 
-        /*  Código válido pero que pongo entre comentarios para eliminar los errores que saltan en VSC pero no en CodeWars.
-
         Collections.sort(derechos);
         Collections.sort(izquierdos);
-
-        */
 
         for(int i = 0 ; i < derechos.size() ; i++) {
             if(!derechos.get(i).equals(izquierdos.get(i)))   return false;
@@ -70,10 +64,7 @@ public class PairOfShoes {
 
     }
 
-    // Solución de la comunidad 1 que funciona pero que no entiendo porqué me subraya como error Hashmap cuando está importado java.util.*
-    // Analizar como lo resuelve.
-    /* Lo pongo entre comentarios para evitar que marque HashMap como error cuando no debería de pasar.
-
+    // Solución de la comunidad 1. Analizar como lo resuelve.
     public static boolean pairOfShoesCommunity(Shoe[] shoes) {
         
         Map<Integer, Integer> map = new HashMap<>();
@@ -88,7 +79,6 @@ public class PairOfShoes {
         return true;
     
     }
-    */
         
     /*  
     Esta lógica no sirve porque NO comprueba que el número de coincidencias de cada talla coincida. 
