@@ -9,7 +9,7 @@
  public class BitCounting {
 
 	// Solución propia sin optimizar. No haría falta darle la vuelta al número binario para colocarlo correctamente. Podemos contarlo al revés dado el objetivo del ejercicio.
-    public static int countBits(int n){
+    public static int countBits(int n) {
         if(n == 0)    return 0;
 		String binaryReverse = "";
         while(n > 1) {
@@ -24,11 +24,11 @@
         return count;
 	}
 
-    public static int countBitsCommunity(int n){
+    public static int countBitsCommunity(int n) {
         return Integer.bitCount(n);
     }
 
-    public static int countBitsCommunityV2(int n){
+    public static int countBitsCommunityV2(int n) {
 		return (int) Integer.toBinaryString(n).chars()
               .filter(c -> c == '1')
               .count();
