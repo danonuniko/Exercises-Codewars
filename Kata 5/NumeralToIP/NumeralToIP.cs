@@ -25,14 +25,14 @@ using System;
 
 public class Kata
 {
-  public static string UInt32ToIP(uint ip)
-  {
+    public static string UInt32ToIP(uint ip)
+    {
         string binaryReverse = "" , binary = "";
         // Convertimos el número decimal a binario (dado la vuelta).
         while(ip > 0) 
         {
-          binaryReverse += ip % 2;
-          ip = ip / 2;
+            binaryReverse += ip % 2;
+            ip = ip / 2;
         }
         // Obtenemos el número decimal en formato binario y orden correcto.
         for(int i = 0 ; i < binaryReverse.Length ; i++) 	binary = binaryReverse[i] + binary;
@@ -47,27 +47,27 @@ public class Kata
         for(int i = 0 ; i < a.Length ; i++) 	aReverse = a[i] + aReverse;
         for(int i = 0 ; i < aReverse.Length ; i++) 
         {
-          if(aReverse[i] == '1')	aFinal += (uint) Math.Pow(2, i);
+            if(aReverse[i] == '1')	    aFinal += (uint) Math.Pow(2, i);
         }
 
         for(int i = 0 ; i < b.Length ; i++) 	bReverse = b[i] + bReverse;
         for(int i = 0 ; i < bReverse.Length ; i++) 
         {
-          if(bReverse[i] == '1')	bFinal += (uint) Math.Pow(2, i);
+            if(bReverse[i] == '1')	    bFinal += (uint) Math.Pow(2, i);
         }
 
         for(int i = 0 ; i < c.Length ; i++) 	cReverse = c[i] + cReverse;
         for(int i = 0 ; i < cReverse.Length ; i++) 
         {
-          if(cReverse[i] == '1')	cFinal += (uint) Math.Pow(2, i);
+            if(cReverse[i] == '1')	    cFinal += (uint) Math.Pow(2, i);
         }
 
         for(int i = 0 ; i < d.Length ; i++) 	dReverse = d[i] + dReverse;
         for(int i = 0 ; i < dReverse.Length ; i++) 
         {
-          if(dReverse[i] == '1')	dFinal += (uint) Math.Pow(2, i);
+            if(dReverse[i] == '1')	    dFinal += (uint) Math.Pow(2, i);
         }
 
         return aFinal + "." + bFinal + "." + cFinal + "." + dFinal;  
-  }
+    }
 }
