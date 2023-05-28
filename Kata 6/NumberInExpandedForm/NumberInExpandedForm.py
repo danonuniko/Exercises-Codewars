@@ -14,7 +14,6 @@ NOTE: All numbers will be whole numbers greater than 0.
 """
 
 # Mi solución en Python.
-
 def expanded_form(num):
     result = ""
     contador = len(str(num))
