@@ -15,9 +15,9 @@ public class Accumul {
         
         String result = "";
         for(int i = 0 ; i < s.length() ; i++) {
-        result +=  Character.toString(s.charAt(i)).toUpperCase();
-        for(int j = 0 ; j < i ; j++)   result +=   Character.toString(s.charAt(i)).toLowerCase();
-        result += "-";
+            result +=  Character.toString(s.charAt(i)).toUpperCase();
+            for(int j = 0 ; j < i ; j++)   result +=   Character.toString(s.charAt(i)).toLowerCase();
+            result += "-";
         }
         return result.substring(0, result.length() - 1);
       
